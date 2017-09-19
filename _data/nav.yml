@@ -1,4 +1,4 @@
 main:
 
     - { url: '/about', text: 'About' }
-    - { url: '/', text: 'Blog' }
+    - { url: '/blog', text: 'Blog' }
