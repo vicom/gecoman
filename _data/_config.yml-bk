@@ -70,4 +70,3 @@ kramdown:
 
 
 include: ['_pages']
-include: ['_blog']

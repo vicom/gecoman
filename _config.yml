@@ -57,5 +57,3 @@ redcarpet:
 
 
 include: ['_pages']
-include: ['_blog']
-
