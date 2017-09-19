@@ -1,5 +1,5 @@
 # Where things are
-source:      ./
+source:      .
 destination: ./_site
 plugins_dir:     ./_plugins
 layouts_dir:     ./_layouts
@@ -24,6 +24,12 @@ unpublished: false
 whitelist: []
 gems:      [jekyll-paginate]
 
+# Conversion
+markdown:    kramdown
+highlighter: pygments
+lsi:         false
+excerpt_separator: "\n\n"
+
 # Serving
 detach:  false
 port:    4000
@@ -46,14 +52,21 @@ rdiscount:
 redcarpet:
   extensions: []
 
-  kramdown:
-    auto_ids:       true
-    footnote_nr:    1
-    entity_output:  as_char
-    toc_levels:     1..6
-    smart_quotes:   lsquo,rsquo,ldquo,rdquo
-    enable_coderay: false
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
 
 
 include: ['_pages']
